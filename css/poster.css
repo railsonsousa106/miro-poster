@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 32px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.poster {
+  width: 50%;
+  padding: 4px;
+  position: relative;
+}
+
+.poster img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
