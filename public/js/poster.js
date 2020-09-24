@@ -1,3 +1,4 @@
+const baseURL = "https://miro-poster.herokuapp.com/";
 const posters = [
   { src: 'img/posters/1.png', width: 267.02, height: 218.31 }
 ]
@@ -5,7 +6,7 @@ const posters = [
 function getImageHTML(img) {
   return `
       <div class="poster">
-        <img src="${img.src}" data-image-url="https://6dd5c9a21ba3.ngrok.io/${img.src}">
+        <img src="${img.src}" data-image-url="${baseURL}${img.src}">
       </div>
     `;
 }
